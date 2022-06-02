@@ -57,7 +57,7 @@ font-0 = mononokiNerdFont:size=12
 line-size = 3
 modules-left = filesystem memory cpu temperature network
 modules-center = bspwm
-modules-right = weather pulseaudio aur date menu
+modules-right = weather pulseaudio fedora date menu
 
 [module/bspwm]
 type = internal/bspwm
@@ -217,14 +217,14 @@ type = internal/xwindow
 label = %title:0:30:...%
 label-padding-right = 20
 
-[module/aur]
+[module/fedora]
 type = custom/script
-exec = pacman -Qu | wc -l
+exec = dnf check-update | tail -n +3 | wc -l
 interval = 60
-label = Aur: %output%
+label = Dnf: %output%
 format-foreground = ${colors.background}
 format-background = ${colors.color9}
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.background}
 format-padding = 2
 format-underline = ${colors.background}
@@ -243,7 +243,7 @@ interval = 1
 
 [module/network]
 type = internal/network
-interface = eno2
+interface = ens1
 interval = 1.0
 label-connected = " %downspeed%  %upspeed%"
 label-connected-foreground = ${colors.background}
@@ -255,7 +255,7 @@ label-disconnected = disconnected
 
 [module/weather]
 type = custom/script
-exec = python ~/.config/polybar/scripts/weather.py
+exec = curl -s wttr.in/10451?format="%f%20%C\n"
 interval = 600
 format-foreground = ${colors.background}
 format-background = ${colors.color5}
@@ -276,6 +276,10 @@ menu-0-0 = Shutdown
 menu-0-0-exec = systemctl poweroff
 menu-0-1 = Reboot
 menu-0-1-exec = systemctl reboot
+menu-0-2 = Logout
+menu-0-2-exec = bspc quit
+menu-0-3 = Suspend
+menu-0-3-exec = systemctl suspend
 
 format-padding = 2
 format-foreground = ${colors.background}

@@ -1,5 +1,4 @@
 #! /bin/sh
-source ~/.zshrc
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 

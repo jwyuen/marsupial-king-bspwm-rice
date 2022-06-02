@@ -2,7 +2,7 @@
 configuration {
  transparency: "real";
  modi: "window,drun,ssh,combi";
- font: "Iosevka Nerd Font Bold 15";
+ font: "Iosevka Nerd Font Bold 13";
  combi-modi: "window,drun,ssh";
  display-drun: 					"";
 }
@@ -14,9 +14,9 @@ window {
     text-color: @foreground;
     width: 20%;
     height: 25%;
-    border: 6px;
+    border: 0px;
     border-color: @urgent-background;
-    border-radius: 24;
+    border-radius: 0;
 }
 
 scrollbar{
