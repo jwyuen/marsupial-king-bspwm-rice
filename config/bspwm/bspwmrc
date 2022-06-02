@@ -32,5 +32,6 @@ bspc rule -a Steam desktop='^10' follow=off
 polybar main &
 
 #startup applications
+picom -b --config ~/.config/picom/picom.conf &
 discord &
 firefox &

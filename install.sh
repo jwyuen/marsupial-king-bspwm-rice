@@ -14,7 +14,8 @@ sudo dnf -y install \
   python3-pip \
   ranger \
   rofi \
-  sxhkd
+  sxhkd \
+  xsetroot
 
 pip3 install --user pywal
 
