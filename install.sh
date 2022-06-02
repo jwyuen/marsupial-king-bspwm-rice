@@ -3,6 +3,8 @@
 sudo dnf install \
   bspwm \
   dunst \
+  feh \
+  ImageMagick \
   kitty \
   lm_sensors \
   neovim \
@@ -11,6 +13,8 @@ sudo dnf install \
   ranger \
   rofi \
   sxhkd
+
+pip3 install --user pywal
 
 rsync -avP walstart.sh ~/
 rsync -avP .xinitrc ~/
