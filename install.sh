@@ -8,6 +8,7 @@ sudo dnf install \
   kitty \
   lm_sensors \
   neovim \
+  picom \
   polybar \
   python3-pip \
   ranger \
