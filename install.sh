@@ -1,9 +1,10 @@
 #!/bin/bash
 
-sudo dnf install \
+sudo dnf -y install \
   bspwm \
   dunst \
   feh \
+  fish \
   ImageMagick \
   kitty \
   lm_sensors \
