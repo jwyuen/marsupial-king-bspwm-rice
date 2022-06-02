@@ -35,5 +35,4 @@ fi
 setxkbmap us &
 xsetroot -cursor_name left_ptr &
 picom -b --config ~/.config/picom/picom.conf &
-pacman -Sy
 exec bspwm
