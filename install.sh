@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source install-lib.sh
+
 sudo dnf -y install \
   bspwm \
   dunst \
@@ -14,17 +16,17 @@ sudo dnf -y install \
   python3-pip \
   ranger \
   rofi \
+  stow \
   sxhkd \
   xsetroot
 
 pip3 install --user pywal
 
-rsync -avP walstart.sh ~/
-rsync -avP .xinitrc ~/
-rsync -avP wallpapers ~/
+mkdir -p $FONTS_DIR
+stow -R home-files -t ~/ -v
+stow -R config -t $XDG_CONFIG_HOME -v
+stow -R fonts -t $FONTS_DIR -v
 
-rsync -avP config/ ~/.config/
-rsync -avP fonts/ ~/.local/share/fonts/
 sudo fc-cache
 sudo sensors-detect
 
