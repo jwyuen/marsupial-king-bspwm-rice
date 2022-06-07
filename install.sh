@@ -27,6 +27,8 @@ stow -R home-files -t ~/ -v
 stow -R config -t $XDG_CONFIG_HOME -v
 stow -R fonts -t $FONTS_DIR -v
 
+addGlobalIncludesToKittyConf
+
 sudo fc-cache
 sudo sensors-detect
 
