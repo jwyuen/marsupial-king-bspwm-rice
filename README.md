@@ -42,7 +42,7 @@ $ ./uninstall.sh
 
 These are included and part of the install script:
 
-* Iosevka Term Extended Medium
+* Fira Code Medium Nerd Font Complete Mono
 * Mononoki Regular Nerd Font Complete
 
 

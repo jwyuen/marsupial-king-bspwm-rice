@@ -2,7 +2,7 @@
 configuration {
  transparency: "real";
  modi: "window,drun,ssh,combi";
- font: "Iosevka Nerd Font Bold 13";
+ font: "FiraCode Nerd Font Mono Medium 13";
  combi-modi: "window,drun,ssh";
  display-drun: 					"";
 }
