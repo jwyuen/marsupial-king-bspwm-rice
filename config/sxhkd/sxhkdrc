@@ -16,7 +16,7 @@ super + b
 
 #change pywal
 super + y
-	~/./walstart.sh
+	bash ~/.config/walstart.sh
 
 # make sxhkd reload its configuration files:
 super + Escape

@@ -26,7 +26,7 @@ bspc rule -a Steam desktop='^10' follow=off
 
 
 #start pywal, set wallpaper
-~/walstart.sh
+~/.config/walstart.sh
 
 #start polybar
 polybar main &

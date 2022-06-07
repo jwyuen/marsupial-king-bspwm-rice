@@ -2,10 +2,7 @@
   Dotfiles based on Marsupial-King's BSPWM rice
 </h1>
 <h4 align ="center"><a href="https://github.com/dylanaraps/pywal">Pywal themed</a>
-<h5 align ="center"><a href="https://github.com/dylanaraps/pywal">Fedora based</a>
-<h2 align ="center">
-  <a href="https://github.com/tsjazil/dotfiles/stargazers"><img src="https://img.shields.io/github/stars/tsjazil/dotfiles?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
-</h2>
+<h5 align ="center"><a href="https://getfedora.org">Fedora based</a>
 
 ##  
 ![gallery](rice.gif)
@@ -15,6 +12,7 @@
 The install (and uninstall) script relies on GNU Stow which makes it simple to create symlinks and remove symlinks respectively.  The install script will also install any required dependencies (assumes you're using Fedora).  This repo also includes all the wallpaper, styles/themes, and fonts you need.  Just run install script and you're all set up.
  
 The scripts are idempotent so you can run them multiple times without screwing up your system.  If you have existing config files that would be overwritten by the symlinks, GNU Stow will throw an error and fail.
+
 
 ```
 $ ./install.sh
@@ -44,11 +42,11 @@ $ ./uninstall.sh
 
 These are included and part of the install script:
 
-Iosevka Term Extended Medium
-Mononoki Regular Nerd Font Complete
+* Iosevka Term Extended Medium
+* Mononoki Regular Nerd Font Complete
 
 
 ## 🖼️ Gallery
 
-![gallery](example.png) 
 ![gallery](rice.gif) 
+![gallery](example.png) 
