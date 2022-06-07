@@ -12,10 +12,9 @@
 ## 
 
 ## Install
-
-The install (and uninstall) script relies on GNU Stow which makes it simple to create symlinks and remove symlinks respectively.  The install script will also install any required dependencies (assumes you're using Fedora).
-
-The scripts are idempotent so you can run them multiple times without screwing up your system.
+The install (and uninstall) script relies on GNU Stow which makes it simple to create symlinks and remove symlinks respectively.  The install script will also install any required dependencies (assumes you're using Fedora).  This repo also includes all the wallpaper, styles/themes, and fonts you need.  Just run install script and you're all set up.
+ 
+The scripts are idempotent so you can run them multiple times without screwing up your system.  If you have existing config files that would be overwritten by the symlinks, GNU Stow will throw an error and fail.
 
 ```
 $ ./install.sh
